@@ -6,7 +6,7 @@
     .info {
       width: 100%;
       max-width: 74rem;
-      padding-top: 196px;
+      padding-top: 19.6rem;
 
       .tag {
         display: flex;
@@ -39,6 +39,72 @@
         margin-top: 2.4rem;
         margin-bottom: 4rem;
       }
+    }
+  }
+  @include responsive(800px) {
+    .s-hero {
+      background-size: auto;
+      .container {
+        .info {
+          padding-top: 16rem;
+          h1 {
+            font-size: 32px;
+          }
+          & > p {
+            font-size: 1.6rem;
+            line-height: 2.8rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.s-featured {
+  .container {
+    display: flex;
+    .info-featured {
+      width: 100%;
+      padding-top: 10rem;
+      > p {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 2.8rem;
+        line-height: 130%;
+        color: $gray-brand;
+        margin-top: 0.8rem;
+      }
+      .box-featured {
+        margin-top: 10rem;
+        max-width: 62.4rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6.8rem;
+        .featured {
+          max-width: 25.9rem;
+          img {
+            margin-bottom: 3rem;
+          }
+
+          h4 {
+            font-weight: 500;
+            font-size: 1.8rem;
+            line-height: 150%;
+            color: $black-brand;
+            margin-bottom: 0.8rem;
+          }
+          p {
+            font-size: 1.6rem;
+            line-height: 150%;
+            color: $gray-brand;
+          }
+        }
+      }
+    }
+    .image-cards {
+      width: 100%;
+      max-width: 46.629rem;
+      margin-top: -7rem;
     }
   }
 }

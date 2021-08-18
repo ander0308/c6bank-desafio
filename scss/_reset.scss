@@ -15,10 +15,9 @@ img {
 
 html {
   font-size: 62.5%;
-}
-
-body {
-  background-color: $black-brand;
+  @include responsive(1280px) {
+    font-size: 55%;
+  }
 }
 
 p {

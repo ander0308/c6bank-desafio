@@ -25,10 +25,57 @@ header {
             font-size: 1.6rem;
             line-height: 1.9rem;
             color: rgba(255, 255, 255, 0.7);
+            transition: color 0.3s;
+            &:hover {
+              color: $white;
+            }
           }
           img {
             margin-left: 1rem;
           }
+        }
+      }
+    }
+  }
+}
+
+@include responsive(1100px) {
+  header {
+    .container {
+      nav {
+        max-width: 60.6rem;
+      }
+    }
+  }
+}
+
+@include responsive(800px) {
+  header {
+    .container {
+      nav {
+        justify-content: flex-end;
+        ul {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@include responsive(480px) {
+  header {
+    .container {
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      .logo {
+        margin-top: 2rem;
+      }
+      nav {
+        button {
+          display: block;
+          margin: 0 auto;
+          margin-top: 2rem;
         }
       }
     }
