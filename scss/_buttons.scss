@@ -31,3 +31,15 @@
     color: $black-brand;
   }
 }
+
+.btn {
+  background-color: $black-brand;
+  color: $white;
+  font-weight: 500;
+  font-size: 1.6rem;
+  padding: 0 8.5rem;
+  line-height: 5.6rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  border-radius: 120px;
+}
