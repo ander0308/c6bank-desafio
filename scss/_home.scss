@@ -41,7 +41,6 @@
       }
     }
   }
-
 }
 @include responsive(560px) {
   .s-hero {
@@ -51,13 +50,13 @@
       .info {
         padding-top: 20em;
         text-align: center;
-     .tag{
-      flex-direction: column;
-      p{
-        margin-left: 0;
-        margin-top: 0.5rem;
-      }      
-     }
+        .tag {
+          flex-direction: column;
+          p {
+            margin-left: 0;
+            margin-top: 0.5rem;
+          }
+        }
         h1 {
           font-size: 32px;
         }
@@ -67,7 +66,7 @@
           text-align: center;
           display: block;
           max-width: 100%;
-          padding:0
+          padding: 0;
         }
       }
     }
@@ -221,8 +220,6 @@
           margin-bottom: 4rem;
         }
       }
-
-
     }
     .banner-business {
       display: flex;
@@ -230,6 +227,10 @@
       border-radius: 12px;
       position: relative;
       height: 42.4rem;
+      @include responsive(700px) {
+        height: auto;
+        padding: 3rem 0;
+      }
       .info-business {
         width: 100%;
         max-width: 34.1rem;
@@ -253,62 +254,66 @@
         .contact-card {
           display: flex;
           align-items: center;
+        }
+        span {
+          color: #fafafa;
+          font-family: "Inter", sans-serif;
+          font-weight: 500;
+          font-size: 1.4rem;
+          line-height: 150%;
+          margin-left: 1.6rem;
+        }
 
-          span {
-            font-family: "Inter", sans-serif;
-            font-weight: 500;
-            font-size: 1.4rem;
-            line-height: 150%;
-            color: #fafafa;
-            margin-left: 1.6rem;
-          }
+        @include responsive(700px) {
+          margin: 0 auto;
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          align-items: center;
         }
       }
-      // .image-business {
-      //   width: 54.1rem;
-      //   height: 65.3rem;
-      //   position: relative;
-      //   margin-top: -11rem;
-      //   .image-card {
-      //     position: absolute;
-      //     top: 0;
-      //     left: 0;
-      //   }
-      //   .image-mockup {
-      //     position: absolute;
-      //     bottom: 0;
-      //     right: 0;
-      //   }
-      // }
+      .image-business {
+        width: 100%;
+        max-width: 32.1rem;
+        margin-top: -3.8rem;
+        margin-left: 191px;
+        @include responsive(1050px) {
+          margin-left: 40px;
+        }
+        @include responsive(700px) {
+          display: none;
+        }
+      }
     }
     .logo-business {
       position: absolute;
       bottom: 5.3rem;
       right: 7.244rem;
+      @include responsive(1050px) {
+        display: none;
+      }
     }
   }
-  
 }
 @include responsive(560px) {
-  .s-business{
-    .container{
-      .top-business{
-        .titulo-business{
+  .s-business {
+    .container {
+      .top-business {
+        .titulo-business {
           text-align: center;
         }
-        .option-business{
+        .option-business {
           max-width: 50rem;
-          a, .btn{
+          a,
+          .btn {
             font-size: 1.4rem;
           }
-          a{
+          a {
             margin-right: 5rem;
           }
-          .btn{
+          .btn {
             padding: 0 60px;
-
           }
-        
         }
       }
     }
@@ -316,33 +321,31 @@
 }
 
 @include responsive(480px) {
-  .s-business{
-    .container{
-      .top-business{
-        .titulo-business{
-          h2{
+  .s-business {
+    .container {
+      .top-business {
+        .titulo-business {
+          h2 {
             font-size: 32px;
           }
-          p{
+          p {
             font-size: 22px;
           }
         }
-        .option-business{
+        .option-business {
           max-width: 50rem;
-          a, .btn{
+          a,
+          .btn {
             font-size: 1.4rem;
           }
-          a{
+          a {
             margin-right: 3rem;
           }
-          .btn{
+          .btn {
             padding: 0 30px;
           }
-        
         }
       }
     }
   }
 }
-
-
