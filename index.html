@@ -13,10 +13,16 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/main.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header>
-      <div class="container">
+      <div
+        class="container"
+        data-aos="fade-down"
+        data-aos-duration="800"
+        data-aos-easing="linear"
+      >
         <a href="#" class="logo">
           <img src="./img/logo.svg" alt="Logo C6" />
         </a>
@@ -37,7 +43,7 @@
     </header>
     <div class="s-hero">
       <div class="container">
-        <div class="info">
+        <div class="info" data-aos="fade-right" data-aos-duration="2000">
           <div class="tag">
             <span>Novo</span>
             <p>Conheça nosso Programa de Pontos Átomos</p>
@@ -55,9 +61,16 @@
     <div class="s-featured">
       <div class="container">
         <div class="info-featured">
-          <h2>Sem tarifas:</h2>
-          <p>economize seu dinheiro</p>
-          <div class="box-featured">
+          <h2 data-aos="fade-right" data-aos-duration="800">Sem tarifas:</h2>
+          <p data-aos="fade-right" data-aos-duration="800">
+            economize seu dinheiro
+          </p>
+          <div
+            class="box-featured"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-easing="linear"
+          >
             <div class="featured">
               <div class="icon">
                 <img src="./img/icon-card.svg" alt="icone cartão" />
@@ -100,7 +113,7 @@
             </div>
           </div>
         </div>
-        <div class="image-cards">
+        <div class="image-cards" data-aos="fade-up" data-aos-duration="1400">
           <img src="./img/cards-c6.png" alt="cartões" />
         </div>
       </div>
@@ -109,18 +122,33 @@
     <div class="s-business">
       <div class="container">
         <div class="top-business">
-          <div class="titulo-business">
+          <div
+            class="titulo-business"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-easing="linear"
+          >
             <h2>Um banco completo</h2>
             <p>com produtos exclusivos</p>
           </div>
-          <div class="option-business">
+          <div
+            class="option-business"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-easing="linear"
+          >
             <button class="btn">PARA VOCÊ</button>
             <a>PARA SUA EMPRESA</a>
           </div>
         </div>
 
         <div class="banner-business">
-          <div class="info-business">
+          <div
+            class="info-business"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-easing="linear"
+          >
             <h3>Conta com cartão C6 Business</h3>
             <p>
               A conta MEI é completa e não tem tarifa de manutenção. Além disso,
@@ -137,7 +165,12 @@
             </div>
           </div>
           <div class="image-business">
-            <img src="./img/device_card.png" alt="Imagem de celular" />
+            <img
+              src="./img/device_card.png"
+              alt="Imagem de celular"
+              data-aos="zoom-out-up"
+              data-aos-duration="2000"
+            />
           </div>
           <img
             class="logo-business"
@@ -149,7 +182,12 @@
     </div>
 
     <footer>
-      <div class="container">
+      <div
+        class="container"
+        data-aos="fade-down"
+        data-aos-duration="1000"
+        data-aos-easing="linear"
+      >
         <div class="box-top">
           <div class="box-links">
             <ul class="box-links-1">
@@ -260,5 +298,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/aos.js"></script>
   </body>
 </html>

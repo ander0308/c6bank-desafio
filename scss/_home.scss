@@ -128,6 +128,7 @@
       width: 100%;
       max-width: 46.629rem;
       margin-top: -7rem;
+      animation: floating 6s ease-in-out infinite;
     }
   }
   @include responsive(960px) {
@@ -231,6 +232,8 @@
       @include responsive(700px) {
         height: auto;
         padding: 3rem 0;
+        flex-direction: column;
+        align-items: center;
       }
       .info-business {
         width: 100%;
@@ -255,6 +258,9 @@
         .contact-card {
           display: flex;
           align-items: center;
+          @include responsive(700px) {
+            display: none;
+          }
         }
         span {
           color: #fafafa;
@@ -278,11 +284,12 @@
         max-width: 32.1rem;
         margin-top: -3.8rem;
         margin-left: 191px;
+        animation: floating 6s ease-in-out infinite;
         @include responsive(1050px) {
-          margin-left: 40px;
+          margin-left: 4rem;
         }
         @include responsive(700px) {
-          display: none;
+          margin-top: 0.8rem;
         }
       }
     }
